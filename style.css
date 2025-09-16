@@ -1,0 +1,254 @@
+* { /*Targets all elements on the page*/
+  margin: 0; /*Remove default margin from all elements*/
+  padding: 0; /*Remove default padding from all elements*/
+  box-sizing: border-box; /*Include padding and border in elements total size*/
+} /*End of universal selector*/
+
+body { /*Styles for the entire page body*/
+  background-color: rgb(10, 10, 10); /*Set dark background for the whole page*/
+  color: rgb(224, 224, 224);  /*Light text color for contrast*/
+  font-family: 'Orbitron', sans-serif;  /*Orbitron font for futuristic style*/
+  line-height: 1.5;  /*Line spacing*/
+} /*End of body styles*/
+
+.container { /*Styles for the main content container*/
+  max-width: 900px; /*Limit content width to 900px*/
+  margin: 0 auto; /*Center the container horizontally*/
+  padding: 20px; /*Add space inside the container*/
+} /*End of container styles*/
+
+nav { /*Styles for the navigation bar*/
+  background-color: rgb(17, 17, 17); /*Dark navbar*/
+  padding: 15px 0; /*Vertical spacing*/
+  border-bottom: 1px solid rgb(51, 51, 51); /*Bottom border*/
+  width: 100%; /*Full width*/
+} /*End of nav styles*/
+
+.nav-content { /*Styles for the inner navigation content*/
+  margin: 0 auto; /*Center the nav content horizontally*/
+  padding: 0 20px; /*Add horizontal padding*/
+  display: flex; /*Use flexbox for layout*/
+  justify-content: center; /*Center all nav content horizontally*/
+  align-items: center; /*Vertically align nav items*/
+} /*End of nav content styles*/
+
+nav ul { /*Styles for the unordered list inside the nav*/
+  list-style: none; /*Remove default bullet points from list*/
+  display: flex; /*Display list items in a row*/
+  gap: 32px; /*Space between each nav item*/
+} /*End of nav ul styles*/
+
+nav a { /*Styles for navigation links*/
+  color: rgb(187, 187, 187); /*Light gray link*/
+  text-decoration: none; /*No underline*/
+  font-weight: bold; /*Bold text*/
+  font-size: 16px; /*Font size*/
+  transition: color 0.3s ease; /*Smooth hover*/
+} /*End of nav link styles*/
+
+nav a.active, /*Targets active navigation link*/
+nav a:hover { /*Targets navigation link when hovered*/
+  color: rgb(255, 204, 0); /*Highlight color for active or hovered link*/
+} /*End of nav link highlight styles*/
+
+/*Header section*/
+header { /*Styles for the header container*/
+  text-align: center; /*Center all header content*/
+  padding: 50px 0 30px; /*Top and bottom spacing*/
+} /*End of header styles*/
+
+header h1 { /*Styles for the main heading*/
+  font-size: 45px; /*Large title size*/
+  color: rgb(255, 204, 0); /*Yellow title color*/
+  letter-spacing: 1px; /*Space between letters*/
+} /*End of header h1 styles*/
+
+.subtitle { /*Styles for the subtitle text*/
+  font-size: 20px; /*Subtitle font size*/
+  color: rgb(153, 153, 153); /*Gray subtitle text*/
+  margin-top: 10px; /*Space below title*/
+} /*End of subtitle styles*/
+
+/*Intro paragraph*/
+.intro { /*Styles for the introductory paragraph*/
+  text-align: center; /*Center the intro text*/
+  margin-bottom: 40px; /*Space below intro*/
+  font-size: 18px; /*Slightly larger text*/
+  color: rgb(204, 204, 204); /*Light gray text*/
+  line-height: 1.5; /*Comfortable line spacing*/
+  max-width: 700px; /*Limit width for readability*/
+  margin: 0 auto; /*Center the intro block horizontally*/
+} /*End of intro paragraph styles*/
+
+/*Tips section*/
+.tips h2 { /*Styles for the tips heading*/
+  text-align: center; /*Center heading*/
+  margin-bottom: 20px; /*Space below heading*/
+  color: rgb(255, 204, 0); /*Yellow heading text*/
+  font-size: 25px; /*Heading size*/
+} /*End of tips heading styles*/
+
+.tip-box { /*Styles for each tip box*/
+  background-color: rgb(26, 26, 26); /*Dark background for tip box*/
+  padding: 15px; /*Inner spacing*/
+  margin: 12px 0;  /*Vertical spacing between tips*/
+  border-radius: 8px; /*Rounded corners*/
+  color: rgb(221, 221, 221); /*Light text color*/
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /*Smooth hover effects*/
+} /* End of tip box styles */
+
+.tip-box:hover { /*Hover effect for tip box*/
+  transform: scale(1.02); /*Slight zoom on hover*/
+} /*End of tip box hover styles*/
+
+.video { /*Styles for the video section container*/
+  text-align: center; /*Center video section*/
+  margin-top: 60px; /*Space above video*/
+} /*End of video section styles*/
+
+.video h2 { /*Styles for the video heading*/
+  font-size: 25px; /*Heading size*/
+  color: rgb(255, 204, 0); /*Yellow heading text*/
+  margin-bottom: 10px; /*Space below heading*/
+} /*End of video heading styles*/
+
+iframe { /*Styles for embedded video*/
+  width: 100%; /*Full width video*/
+  height: 315px; /*Fixed height for video*/
+  border-radius: 12px; /*Rounded corners*/
+  border: none; /*Remove default border*/
+} /*End of iframe styles*/
+
+.skills-grid { /*Styles for the grid container holding skill cards*/
+  display: grid; /*Use CSS Grid layout*/
+  grid-template-columns: 280px 280px 280px; /*Three fixed width columns*/
+  gap: 32px; /*Space between grid items*/
+  margin-top: 32px; /*Space above the grid*/
+} /*End of skills grid styles*/
+
+.skill-card { /*Styles for each individual skill card*/
+  width: 295px; /*Fixed width*/
+  height: 295px; /*Fixed height for square shape*/
+  background-color: rgb(26, 26, 26); /*Dark background*/
+  border: 2px solid rgb(51, 51, 51); /*Subtle border*/
+  border-radius: 12px; /*Rounded corners*/
+  padding: 24px; /*Inner spacing*/
+  text-align: center; /*Center content*/
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /*Smooth hover effects*/
+} /*End of skill card styles*/
+
+.skill-card:hover { /*Hover effect for skill cards*/
+  transform: translateY(-5px); /*Slight upward movement on hover*/
+  border-color: rgb(255, 204, 0); /*Highlight border on hover*/
+} /*End of skill card hover styles*/
+
+.skill-image { /*Styles for the skill icon image*/
+  width: 100px; /*Fixed width for skill icon*/
+  height: 100px; /*Fixed height for skill icon*/
+  margin-bottom: 16px; /*Space below the image*/
+} /*End of skill image styles*/
+
+.skill-card h3 { /*Styles for the skill card heading*/
+  margin: 8px 0; /*Vertical spacing*/
+  font-size: 19px; /*Font size of 19 pixels*/
+  color: rgb(255, 204, 0); /*Yellow heading*/
+} /*End of skill card h3 styles*/
+
+.skill-card p { /*Styles for the skill card description*/
+  font-size: 15px; /*Font size of 15 pixels*/
+  color: rgb(204, 204, 204); /*Light gray text*/
+} /*End of skill card paragraph styles*/
+
+.equipment-grid { /*Styles for the equipment grid container*/
+  display: flex; /*Flexbox layout*/
+  flex-wrap: wrap; /*Allow wrapping*/
+  gap: 32px; /*Space between cards*/
+  margin-top: 32px; /*Top margin*/
+} /*End of equipment grid styles*/
+
+.equipment-card { /*Styles for each equipment card*/
+  background-color: rgb(26, 26, 26); /*Dark background*/
+  border: 2px solid rgb(51, 51, 51); /*Subtle border*/
+  border-radius: 12px; /*Rounded corners*/
+  width: 260px; /*Fixed width*/
+  padding: 24px; /*Inner spacing is 24 pixels*/
+  text-align: center; /*Center content*/
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /*Hover effects*/
+} /*End of equipment card styles*/
+
+.equipment-card:hover { /*Hover effect for equipment cards*/
+  transform: translateY(-5px); /*Slight upward movement on hover*/
+  border-color: rgb(255, 204, 0); /*Highlight border on hover*/
+} /*End of equipment card hover styles*/
+
+.equipment-card .placeholder { /*Styles for the emoji/icon placeholder*/
+  font-size: 32px; /*Font size is 32 pixles*/
+  margin-bottom: 16px; /*1rem = 16px*/
+  color: rgb(221, 221, 221); /*Light gray for icon/emojis*/
+} /*End of placeholder styles*/
+
+.equipment-card h3 { /*Styles for the equipment card heading*/
+  color: rgb(255, 204, 0); /*Yellow heading text*/
+  margin-bottom: 8px; /*Space below heading*/
+} /*End of equipment card h3 styles*/
+
+.equipment-card p { /*Styles for the equipment card description*/
+  color: rgb(204, 204, 204); /*Light gray paragraph text*/
+  font-size: 15px; /*Font size is 15 pixels*/
+} /*End of equipment card paragraph styles*/
+
+.dropdown { /*Styles for the dropdown container*/
+  position: relative; /*Needed to position the dropdown menu absolutely within*/
+} /*End of dropdown styles*/
+
+.dropdown-menu { /*Styles for the dropdown menu itself*/
+  position: absolute; /*Position relative to the dropdown container*/
+  top: 100%; /*Place directly below the parent*/
+  left: 0; /*Align to the left edge*/
+  background-color: rgb(17, 17, 17); /*Dark background*/
+  border: 1px solid rgb(51, 51, 51); /*Subtle border*/
+  border-radius: 6px; /*Rounded corners*/
+  padding: 8px 0; /*Vertical padding*/
+  display: none; /*Hidden by default*/
+  flex-direction: column; /*Stack items vertically*/
+  min-width: 160px; /*Minimum width for dropdown*/
+} /*End of dropdown menu styles*/
+
+.dropdown-menu li a { /*Styles for links inside dropdown items*/
+  text-align: center; /*Center the text*/
+  color: rgb(187, 187, 187); /*#bbb*/
+  text-decoration: none; /*Remove underline*/
+  font-weight: normal; /*Regular font weight*/
+  font-size: 15px; /*Font size of 15 pixels*/
+  display: block; /*Make link fill the list item*/
+  transition: background-color 0.3s ease; /*Smooth hover effect*/
+} /*End of dropdown menu link styles*/
+
+.dropdown-menu li a:hover { /*Hover effect for dropdown links*/
+  color: rgb(255, 204, 0); /*Yellow highlight*/
+} /*End of dropdown menu link hover styles*/
+
+.dropdown:hover .dropdown-menu { /*Reveal dropdown when parent is hovered*/
+  display: flex; /*Show menu as a flex column*/
+} /*End of dropdown hover reveal styles*/
+
+.media img { /*Styles for media images*/
+  display: block; /*Remove inline spacing*/
+  margin: 0 auto; /*Center the image*/
+  max-width: 100%; /*Responsive width*/
+  height: auto; /*Maintain aspect ratio*/
+} /*End of media image styles*/
+
+.skill-card a { /*Styles for links inside skill cards*/
+  color: inherit; /*Use parent color*/
+  text-decoration: none; /*Remove underline*/
+} /*End of skill card link styles*/
+
+.skill-card a:visited, /*Visited link state*/
+.skill-card a:hover, /*Hover link state*/
+.skill-card a:focus, /*Focused link state*/
+.skill-card a:active { /*Active link state*/
+  color: inherit; /*Keep inherited color*/
+  text-decoration: none; /*No underline*/
+  outline: none; /*Remove focus outline*/
+} /*End of skill card link state styles*/
